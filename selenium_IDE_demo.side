@@ -1,0 +1,85 @@
+{
+  "id": "8094b1fb-4347-47b6-a337-099f3843a2c6",
+  "version": "2.0",
+  "name": "selenium_IDE_demo",
+  "url": "https://qentinelqi.github.io",
+  "tests": [{
+    "id": "1379d831-2e4f-43b7-b70a-35ec69212d7c",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "5083513b-ebbf-4274-9120-63fc6fb51fac",
+    "name": "Add_to_shopping_cart",
+    "commands": [{
+      "id": "8860fb82-dc6e-49bd-b5fa-179e763a2d08",
+      "comment": "",
+      "command": "open",
+      "target": "/shop/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7fbbbd75-4475-4073-9519-49ae96c023c3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1435x1023",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "237f4a7c-b775-4c1f-abd9-b9bfd9136f13",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Bumble the Elephant",
+      "targets": [
+        ["linkText=Bumble the Elephant", "linkText"],
+        ["css=li:nth-child(2) > .product-details a", "css:finder"],
+        ["xpath=//a[contains(text(),'Bumble the Elephant')]", "xpath:link"],
+        ["xpath=//div[@id='products']/section/div/ul/li[2]/div[2]/h4/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/shop/products/elephant/')])[3]", "xpath:href"],
+        ["xpath=//li[2]/div[2]/h4/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bumble the Elephant')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9bbb832-d767-42a4-a2b0-1583361386b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.snipcart-add-item",
+      "targets": [
+        ["css=.snipcart-add-item", "css:finder"],
+        ["xpath=//div[@id='add']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4227bca4-5571-4e7a-8469-38981425a9af",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,276)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7531f12d-ec39-4de9-a32b-fc5f45193981",
+      "comment": "",
+      "command": "click",
+      "target": "css=.snipcart-modal__close-title",
+      "targets": [
+        ["css=.snipcart-modal__close-title", "css:finder"],
+        ["xpath=//div[@id='snipcart']/div/div/header/button/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Continue shopping')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b7095ca0-77aa-4ebc-898c-fa638634c3c1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1379d831-2e4f-43b7-b70a-35ec69212d7c"]
+  }],
+  "urls": ["https://qentinelqi.github.io/"],
+  "plugins": []
+}
